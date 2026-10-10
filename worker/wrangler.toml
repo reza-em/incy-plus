@@ -1,0 +1,8 @@
+name = "incy-latest-redirect"
+main = "worker.js"
+compatibility_date = "2024-01-01"
+
+# Deploy: npm i -g wrangler && wrangler login && wrangler deploy
+# Then point dl.incy.cc at the worker (Routes tab).
+[vars]
+MANIFEST_URL = "https://raw.githubusercontent.com/INCY-DEV/incy-platforms/main/RELEASE.json"

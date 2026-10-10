@@ -1,0 +1,85 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "INCY platform manifest",
+  "description": "Client update feed. Every download URL is pinned to its platform tag; never use global /latest.",
+  "type": "object",
+  "required": ["android", "desktop", "ios"],
+  "additionalProperties": false,
+  "properties": {
+    "android": {
+      "type": "object",
+      "required": ["version", "download", "name"],
+      "additionalProperties": true,
+      "properties": {
+        "version": {"type": "string", "pattern": "^\\d+\\.\\d+\\.\\d+$"},
+        "tag": {"type": "string", "pattern": "^android-v\\d+\\.\\d+\\.\\d+$"},
+        "download": {"type": "string", "pattern": "^https://github\\.com/INCY-DEV/incy-platforms/releases/download/android-v\\d+\\.\\d+\\.\\d+/Incy\\.apk$"},
+        "name": {"type": "string"},
+        "sha256": {
+          "type": "object",
+          "propertyNames": {"enum": ["Incy.apk", "SHA256SUMS"]},
+          "additionalProperties": {"type": "string", "pattern": "^[0-9a-f]{64}$"}
+        }
+      }
+    },
+    "desktop": {
+      "type": "object",
+      "required": ["version", "windows", "macos", "linux", "name"],
+      "additionalProperties": true,
+      "properties": {
+        "version": {"type": "string", "pattern": "^\\d+\\.\\d+\\.\\d+$"},
+        "tag": {"type": "string", "pattern": "^desktop-v\\d+\\.\\d+\\.\\d+$"},
+        "name": {"type": "string"},
+        "windows": {
+          "type": "object",
+          "required": ["x64", "arm64", "x64_portable", "arm64_portable"],
+          "additionalProperties": true,
+          "properties": {
+            "x64": {"type": "string", "pattern": "^https://.*incy-windows-setup\\.exe$"},
+            "arm64": {"type": "string", "pattern": "^https://.*incy-windows-setup\\.exe$"},
+            "x64_portable": {"type": "string", "pattern": "^https://.*incy-windows-portable\\.zip$"},
+            "arm64_portable": {"type": "string", "pattern": "^https://.*incy-windows-portable\\.zip$"}
+          }
+        },
+        "macos": {
+          "type": "object",
+          "required": ["arm64", "intel"],
+          "additionalProperties": true,
+          "properties": {
+            "arm64": {"type": "string", "pattern": "^https://.*incy-macos-arm64\\.dmg$"},
+            "intel": {"type": "string", "pattern": "^https://.*incy-macos-intel\\.dmg$"}
+          }
+        },
+        "linux": {
+          "type": "object",
+          "required": ["x64_deb", "arm64_deb", "x64_rpm", "arm64_rpm", "x64_arch", "x64_portable", "arm64_portable"],
+          "additionalProperties": true,
+          "properties": {
+            "x64_deb": {"type": "string", "pattern": "^https://.*\\.deb$"},
+            "arm64_deb": {"type": "string", "pattern": "^https://.*\\.deb$"},
+            "x64_rpm": {"type": "string", "pattern": "^https://.*\\.rpm$"},
+            "arm64_rpm": {"type": "string", "pattern": "^https://.*\\.rpm$"},
+            "x64_arch": {"type": "string", "pattern": "^https://.*\\.pkg\\.tar\\.zst$"},
+            "x64_portable": {"type": "string", "pattern": "^https://.*\\.zip$"},
+            "arm64_portable": {"type": "string", "pattern": "^https://.*\\.zip$"}
+          }
+        },
+        "sha256": {
+          "type": "object",
+          "additionalProperties": {"type": "string", "pattern": "^[0-9a-f]{64}$"}
+        }
+      }
+    },
+    "ios": {
+      "type": "object",
+      "required": ["version", "build", "AppStore", "name"],
+      "additionalProperties": true,
+      "properties": {
+        "version": {"type": "string", "pattern": "^\\d+\\.\\d+\\.\\d+$"},
+        "build": {"type": "string", "pattern": "^[0-9]+$"},
+        "AppStore": {"type": "string", "pattern": "^https://apps\\.apple\\.com/.*incy.*$"},
+        "name": {"type": "string"}
+      }
+    }
+  }
+}

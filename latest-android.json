@@ -1,0 +1,7 @@
+{
+  "platform": "android",
+  "version": "3.7.0",
+  "tag": "android-v3.7.0",
+  "download": "https://github.com/INCY-DEV/incy-platforms/releases/download/android-v3.7.0/Incy.apk",
+  "name": "INCY Android 3.7.0"
+}
