@@ -2,6 +2,12 @@
 
 All notable platform releases.
 
+## Tools v1.1.0 - 2026-10-10
+
+- Repackaged downloader as `incy-downloader_1.1.0_all.deb` + `incy-download.exe`
+- New bundle `incy-configs-v1.1.0.zip`: DNS presets + Telegram SOCKS5 + guides
+- Get them from the `tools-v1.1.0` release assets (our files only, no upstream binaries)
+
 ## Guides - 2026-10-10
 
 - Custom DNS presets: `configs/dns/` (default / Iran Shecan / DoH) — [guide](docs/custom-dns.md)
