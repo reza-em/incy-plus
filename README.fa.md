@@ -1,6 +1,6 @@
 <div align="center">
 
-# اینسی | INCY — فیلترشکن و پروکسی Xray برای اندروید، ویندوز، مک و لینوکس
+# اینسی‌پلاس | INCY+ — فیلترشکن و پروکسی Xray برای اندروید، ویندوز، مک و لینوکس
 
 **دانلود مستقیم INCY با VLESS و Reality، VMess، Trojan، Shadowsocks، Hysteria2 و WireGuard**
 
@@ -59,7 +59,7 @@
 - [DNS دستی](docs/custom-dns.md) — پیش‌فرض / ایران (شکن) / رمزنگاری‌شده برای ایمپورت full Xray
 - [پروکسی تلگرام](docs/telegram-proxy.md) — SOCKS5 محلی جدا (`127.0.0.1:10808`) مستقل از سابسکریپشن
 
-## چرا این فورک (incy-platforms-plus)؟
+## چرا این فورک (incy-plus)؟
 
 - فید نسخه تفکیک‌شده بدون باگ `/latest` گلوبال: [`RELEASE.json`](RELEASE.json)، [`latest-android.json`](latest-android.json)، [`latest-desktop.json`](latest-desktop.json)
 - چک‌سام `SHA256`، تست خودکار لینک‌ها، چنج‌لاگ خودکار ([`CHANGELOG.md`](CHANGELOG.md))
@@ -68,4 +68,4 @@
 
 ## سئو / Keywords
 
-INCY download, دانلود اینسی, فیلترشکن قوی اندروید و ویندوز, VLESS Reality client, Xray-core proxy, Shadowsocks, Hysteria2, Trojan, WireGuard, Obtainium APK.
+INCY+ download, دانلود اینسی پلاس, دانلود اینسی, فیلترشکن قوی اندروید و ویندوز, VLESS Reality client, Xray-core proxy, Shadowsocks, Hysteria2, Trojan, WireGuard, Obtainium APK.

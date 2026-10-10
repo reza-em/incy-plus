@@ -69,7 +69,7 @@ def build(version='1.0.0', out_dir=ROOT / 'dist'):
         script = b'#!/usr/bin/env python3\n' + script
     doc = (
         f"{PKG} {version}\n"
-        "See: https://github.com/reza-em/incy-platforms-plus\n".encode()
+        "See: https://github.com/reza-em/incy-plus\n".encode()
     )
     control = tar_gz([('control', control_text(version).encode(), 0o644)])
     data = tar_gz([

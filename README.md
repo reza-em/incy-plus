@@ -1,8 +1,8 @@
 <div align="center">
 
-# INCY
+# INCY+
 
-**Cross-platform proxy client built on [Xray-core](https://github.com/XTLS/Xray-core) — VLESS Reality, VMess, Trojan, Shadowsocks, Hysteria2, WireGuard**
+**INCY+ — Cross-platform proxy client built on [Xray-core](https://github.com/XTLS/Xray-core) — VLESS Reality, VMess, Trojan, Shadowsocks, Hysteria2, WireGuard**
 
 > **[راهنمای فارسی](README.fa.md)** — دانلود مستقیم برای اندروید، ویندوز، مک و لینوکس
 
