@@ -1,0 +1,31 @@
+name: Links and manifest health
+on:
+  push:
+    paths: ['README.md', 'RELEASE.json', 'latest-*.json', 'CHANGELOG.md', 'scripts/**', 'tests/**', 'obtainium.json', '.github/workflows/**']
+  pull_request:
+    paths: ['README.md', 'RELEASE.json', 'latest-*.json', 'CHANGELOG.md', 'scripts/**', 'tests/**', 'obtainium.json', '.github/workflows/**']
+  schedule:
+    - cron: '0 6 * * *'
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - run: python3 -m unittest discover -s tests -v
+      - name: Verify generated pointers are fresh
+        run: |
+          python3 scripts/build_latest_json.py
+          git diff --exit-code -- latest-android.json latest-desktop.json || (echo 'Run python scripts/build_latest_json.py and commit'; exit 1)
+          python3 scripts/generate_changelog.py
+          git diff --exit-code -- CHANGELOG.md || (echo 'Run python scripts/generate_changelog.py and commit'; exit 1)
+  links:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Check README links
+        uses: lycheeverse/lychee-action@v1
+        with:
+          args: --no-progress --exclude-mail README.md CHANGELOG.md
