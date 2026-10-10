@@ -26,8 +26,11 @@ class DownloaderTest(unittest.TestCase):
         for name in ('README.md', 'README.fa.md'):
             text = (ROOT / name).read_text(encoding='utf-8')
             self.assertIn('for-the-badge', text, name)
-            self.assertIn('incy-windows-setup.exe', text, name)
-            self.assertIn('incy-linux-x64.deb', text, name)
+            # Primary buttons must be OUR builds, not the upstream app.
+            self.assertIn('github.com/reza-em/incy-plus/releases/download/', text, name)
+            self.assertIn('incy-download.exe', text, name)
+            self.assertIn('incy-downloader_', text, name)
+            self.assertIn('incy-configs-', text, name)
 
 
 if __name__ == '__main__':

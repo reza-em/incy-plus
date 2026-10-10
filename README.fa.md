@@ -11,15 +11,20 @@
 ## دانلود
 
 <p align="center">
-  <a href="https://github.com/INCY-DEV/incy-platforms/releases/download/desktop-v3.8.8/incy-windows-setup.exe">
-    <img src="https://img.shields.io/badge/دانلود_ویندوز_.exe-3.8.8-0078D4?style=for-the-badge&logo=windows&logoColor=white" alt="دانلود اینسی برای ویندوز">
+  <a href="https://github.com/reza-em/incy-plus/releases/download/tools-v1.1.0/incy-download.exe">
+    <img src="https://img.shields.io/badge/دانلود_اینسی_پلاس-.exe-0078D4?style=for-the-badge&logo=windows&logoColor=white" alt="دانلود اینسی‌پلاس برای ویندوز">
   </a>
-  <a href="https://github.com/INCY-DEV/incy-platforms/releases/download/desktop-v3.8.8/incy-linux-x64.deb">
-    <img src="https://img.shields.io/badge/دانلود_لینوکس_.deb-3.8.8-E95420?style=for-the-badge&logo=ubuntu&logoColor=white" alt="دانلود اینسی برای لینوکس">
+  <a href="https://github.com/reza-em/incy-plus/releases/download/tools-v1.1.0/incy-downloader_1.1.0_all.deb">
+    <img src="https://img.shields.io/badge/دانلود_اینسی_پلاس-.deb-E95420?style=for-the-badge&logo=ubuntu&logoColor=white" alt="دانلود اینسی‌پلاس برای لینوکس">
+  </a>
+  <a href="https://github.com/reza-em/incy-plus/releases/download/tools-v1.1.0/incy-configs-v1.1.0.zip">
+    <img src="https://img.shields.io/badge/دانلود_کانفیگ‌ها-.zip-2ea44f?style=for-the-badge&logo=github&logoColor=white" alt="دانلود کانفیگ‌های اینسی‌پلاس">
   </a>
 </p>
 
-### موبایل و تلویزیون
+> دکمه‌های بالا **ساخت‌های خود اینسی‌پلاس** هستند. جدول‌های زیر نسخه‌های **اپ اصلی (آپ‌استریم)** را دنبال می‌کنند.
+
+### موبایل و تلویزیون (آپ‌استریم)
 
 | پلتفرم | لینک |
 |:---------|:-----|
@@ -27,7 +32,7 @@
 | اندروید / اندروید تی‌وی (گوگل‌پلی) | [Google Play](https://play.google.com/store/apps/details?id=llc.itdev.incy) |
 | فایل APK اندروید (نصب مستقیم) | [Download APK](https://github.com/INCY-DEV/incy-platforms/releases/download/android-v3.7.0/Incy.apk) |
 
-### دسکتاپ (ویندوز، مک، لینوکس)
+### دسکتاپ (آپ‌استریم: ویندوز، مک، لینوکس)
 
 > نسخه دسکتاپ **پیش‌آلفا** است؛ برای استفاده روزمره خوب است ولی ممکن است تغییر کند.
 

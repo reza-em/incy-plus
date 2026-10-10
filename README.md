@@ -18,15 +18,21 @@
 ## Downloads
 
 <p align="center">
-  <a href="https://github.com/INCY-DEV/incy-platforms/releases/download/desktop-v3.8.8/incy-windows-setup.exe">
-    <img src="https://img.shields.io/badge/Download_Windows_.exe-3.8.8-0078D4?style=for-the-badge&logo=windows&logoColor=white" alt="Download INCY for Windows (.exe)">
+  <a href="https://github.com/reza-em/incy-plus/releases/download/tools-v1.1.0/incy-download.exe">
+    <img src="https://img.shields.io/badge/Download_INCY+_Tools-.exe-0078D4?style=for-the-badge&logo=windows&logoColor=white" alt="Download INCY+ Tools for Windows (.exe)">
   </a>
-  <a href="https://github.com/INCY-DEV/incy-platforms/releases/download/desktop-v3.8.8/incy-linux-x64.deb">
-    <img src="https://img.shields.io/badge/Download_Linux_.deb-3.8.8-E95420?style=for-the-badge&logo=ubuntu&logoColor=white" alt="Download INCY for Linux (.deb)">
+  <a href="https://github.com/reza-em/incy-plus/releases/download/tools-v1.1.0/incy-downloader_1.1.0_all.deb">
+    <img src="https://img.shields.io/badge/Download_INCY+_Tools-.deb-E95420?style=for-the-badge&logo=ubuntu&logoColor=white" alt="Download INCY+ Tools for Linux (.deb)">
+  </a>
+  <a href="https://github.com/reza-em/incy-plus/releases/download/tools-v1.1.0/incy-configs-v1.1.0.zip">
+    <img src="https://img.shields.io/badge/Download_INCY+_Configs-.zip-2ea44f?style=for-the-badge&logo=github&logoColor=white" alt="Download INCY+ DNS + Telegram configs (.zip)">
   </a>
 </p>
 
-### Mobile & TV
+> The buttons above are **our INCY+ builds**. The version-pinned tables below
+> track the **original upstream app** (auto-updated manifest feed).
+
+### Mobile & TV (upstream)
 
 | Platform | Link |
 |:---------|:-----|
@@ -34,7 +40,7 @@
 | Android / Android TV | [Google Play](https://play.google.com/store/apps/details?id=llc.itdev.incy) |
 | Android APK (sideload) | [Download APK](https://github.com/INCY-DEV/incy-platforms/releases/download/android-v3.7.0/Incy.apk) |
 
-### Desktop
+### Desktop (upstream)
 
 > [!WARNING]
 > The desktop client is **pre-alpha**. It is usable day to day, but expect rough
