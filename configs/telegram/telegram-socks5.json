@@ -1,0 +1,81 @@
+{
+  "_comment": "INCY full-config — dedicated local SOCKS5 for Telegram, independent of your subscription. 1) Replace YOUR_SERVER / YOUR_UUID (and Reality keys if you use them). 2) Import as full Xray JSON in INCY. 3) Telegram > Settings > Data & Storage > Proxy > Add Proxy > SOCKS5 > 127.0.0.1:10808. See docs/telegram-proxy.md",
+  "log": {
+    "loglevel": "warning"
+  },
+  "dns": {
+    "servers": [
+      "1.1.1.1",
+      "8.8.8.8"
+    ],
+    "queryStrategy": "UseIPv4"
+  },
+  "inbounds": [
+    {
+      "tag": "telegram-in",
+      "listen": "127.0.0.1",
+      "port": 10808,
+      "protocol": "socks",
+      "settings": {
+        "udp": true
+      },
+      "sniffing": {
+        "enabled": true,
+        "destOverride": [
+          "http",
+          "tls"
+        ]
+      }
+    }
+  ],
+  "outbounds": [
+    {
+      "tag": "proxy",
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
+            "address": "YOUR_SERVER_ADDRESS_HERE",
+            "port": 443,
+            "users": [
+              {
+                "id": "YOUR_UUID_HERE",
+                "encryption": "none",
+                "flow": "xtls-rprx-vision"
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "tcp",
+        "security": "reality",
+        "realitySettings": {
+          "serverName": "YOUR_SNI_HERE",
+          "publicKey": "YOUR_REALITY_PUBLIC_KEY_HERE",
+          "shortId": "YOUR_SHORT_ID_HERE",
+          "fingerprint": "chrome"
+        }
+      }
+    },
+    {
+      "tag": "direct",
+      "protocol": "freedom"
+    },
+    {
+      "tag": "block",
+      "protocol": "blackhole"
+    }
+  ],
+  "routing": {
+    "rules": [
+      {
+        "type": "field",
+        "inboundTag": [
+          "telegram-in"
+        ],
+        "outboundTag": "proxy"
+      }
+    ]
+  }
+}

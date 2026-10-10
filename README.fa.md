@@ -54,6 +54,11 @@
 
 `VLESS (Reality)` `VMess` `Trojan` `Shadowsocks` `Hysteria2` `SOCKS5` `WireGuard`
 
+## راهنماها
+
+- [DNS دستی](docs/custom-dns.md) — پیش‌فرض / ایران (شکن) / رمزنگاری‌شده برای ایمپورت full Xray
+- [پروکسی تلگرام](docs/telegram-proxy.md) — SOCKS5 محلی جدا (`127.0.0.1:10808`) مستقل از سابسکریپشن
+
 ## چرا این فورک (incy-platforms-plus)؟
 
 - فید نسخه تفکیک‌شده بدون باگ `/latest` گلوبال: [`RELEASE.json`](RELEASE.json)، [`latest-android.json`](latest-android.json)، [`latest-desktop.json`](latest-desktop.json)

@@ -2,6 +2,11 @@
 
 All notable platform releases.
 
+## Guides - 2026-10-10
+
+- Custom DNS presets: `configs/dns/` (default / Iran Shecan / DoH) — [guide](docs/custom-dns.md)
+- Telegram proxy: `configs/telegram/telegram-socks5.json` (local SOCKS5 127.0.0.1:10808) — [guide](docs/telegram-proxy.md)
+
 ## Tools v1.0.0 - 2026-10-10
 
 - `incy-download.exe` (Windows): fetches INCY installers from pinned manifest URLs with SHA256 verify

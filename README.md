@@ -80,6 +80,11 @@ ambiguity): [`latest-android.json`](latest-android.json),
 [`RELEASE.json`](RELEASE.json) + [`RELEASE.schema.json`](RELEASE.schema.json).
 See [`CHANGELOG.md`](CHANGELOG.md) for history.
 
+## Guides
+
+- [Custom DNS](docs/custom-dns.md) — `configs/dns/` presets (default / Iran / DoH) for full Xray import
+- [Telegram proxy](docs/telegram-proxy.md) — dedicated local SOCKS5 (`127.0.0.1:10808`), separate from your subscription
+
 ## Protocols
 
 `VLESS (Reality)` `VMess` `Trojan` `Shadowsocks` `Hysteria2` `SOCKS5` `WireGuard`

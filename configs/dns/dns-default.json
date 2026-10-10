@@ -1,0 +1,12 @@
+{
+  "_comment": "INCY full-config 'dns' block — default. Paste/replace the dns section of your imported Xray JSON, or merge via routing profile. See docs/custom-dns.md",
+  "dns": {
+    "servers": [
+      "1.1.1.1",
+      "1.0.0.1",
+      "8.8.8.8"
+    ],
+    "queryStrategy": "UseIPv4",
+    "disableCache": false
+  }
+}

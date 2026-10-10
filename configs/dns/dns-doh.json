@@ -1,0 +1,21 @@
+{
+  "_comment": "INCY full-config 'dns' block — DNS-over-HTTPS. Encrypted DNS so the network can't spoof or snoop queries. Requires a recent Xray-core. See docs/custom-dns.md",
+  "dns": {
+    "servers": [
+      {
+        "address": "https://cloudflare-dns.com/dns-query",
+        "port": 443,
+        "domains": [
+          "geosite:geolocation-!cn"
+        ]
+      },
+      {
+        "address": "https://dns.google/dns-query",
+        "port": 443
+      },
+      "1.1.1.1"
+    ],
+    "queryStrategy": "UseIPv4",
+    "disableCache": false
+  }
+}
