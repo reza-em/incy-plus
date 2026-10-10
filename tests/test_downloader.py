@@ -22,6 +22,13 @@ class DownloaderTest(unittest.TestCase):
             _, url = m.resolve(manifest, target)
             self.assertTrue(url.startswith('https://'), target)
 
+    def test_dist_artifacts_committed(self):
+        for name in ('incy-download.exe', 'incy-downloader_1.1.0_all.deb',
+                     'incy-configs-v1.1.0.zip'):
+            path = ROOT / 'dist' / name
+            self.assertTrue(path.is_file(), f"missing dist/{name}")
+            self.assertGreater(path.stat().st_size, 0, name)
+
     def test_readme_download_buttons(self):
         for name in ('README.md', 'README.fa.md'):
             text = (ROOT / name).read_text(encoding='utf-8')
