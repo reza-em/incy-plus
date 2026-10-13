@@ -38,6 +38,9 @@ class DownloaderTest(unittest.TestCase):
             self.assertIn('incy-download.exe', text, name)
             self.assertIn('incy-downloader_', text, name)
             self.assertIn('incy-configs-', text, name)
+            # Same binaries linked straight from the repo tree.
+            self.assertIn('dist/incy-download.exe', text, name)
+            self.assertIn('dist/incy-configs-v1.1.0.zip', text, name)
 
 
 if __name__ == '__main__':

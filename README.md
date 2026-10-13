@@ -29,6 +29,13 @@
   </a>
 </p>
 
+<p align="center">
+  Same files, straight from this repo:
+  <a href="dist/incy-download.exe">incy-download.exe</a> ·
+  <a href="dist/incy-downloader_1.1.0_all.deb">incy-downloader_1.1.0_all.deb</a> ·
+  <a href="dist/incy-configs-v1.1.0.zip">incy-configs-v1.1.0.zip</a>
+</p>
+
 > The buttons above are **our INCY+ builds**. The version-pinned tables below
 > track the **original upstream app** (auto-updated manifest feed).
 

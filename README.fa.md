@@ -22,6 +22,13 @@
   </a>
 </p>
 
+<p align="center">
+  همین فایل‌ها، مستقیم از داخل ریپو:
+  <a href="dist/incy-download.exe">incy-download.exe</a> ·
+  <a href="dist/incy-downloader_1.1.0_all.deb">incy-downloader_1.1.0_all.deb</a> ·
+  <a href="dist/incy-configs-v1.1.0.zip">incy-configs-v1.1.0.zip</a>
+</p>
+
 > دکمه‌های بالا **ساخت‌های خود اینسی‌پلاس** هستند. جدول‌های زیر نسخه‌های **اپ اصلی (آپ‌استریم)** را دنبال می‌کنند.
 
 ### موبایل و تلویزیون (آپ‌استریم)
